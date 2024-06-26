@@ -1,7 +1,7 @@
 import "./Home.css"
 import add from "./img/plus.png"
-import panda from "./img/panda.png"
-import panda2 from "./img/panda2.png"
+import boy from "./img/boy.png"
+import girl from "./img/girl.png"
 import ToDoCard from "../../components/todoCard/todoCard"
 import { useEffect, useState } from "react"
 import toast, {Toaster} from "react-hot-toast"
@@ -28,7 +28,7 @@ function Home() {
     function deleteItem(index){
         Swal.fire({
             title: "Are you sure ?",
-            text: "You want to delete this task!",
+            text: "You want to delete this task..!",
             icon: "warning",
             showCancelButton: true,
     }).then((result)=>{
@@ -49,7 +49,7 @@ function Home() {
   return (
     <div>
         <h1 className="app-title">To-Do App📝</h1>
-        <img src={panda} className="panda-img1" alt="panda1"/>
+        <img src={boy} className="boy" alt="boy"/>
         <div className="todolist-container">
            {
             todoList.map((todoItem, i)=>{
@@ -69,7 +69,7 @@ function Home() {
             : null
            }
         </div>
-        <img src={panda2} className="panda-img2" alt="panda2"/>
+        <img src={girl} className="girl" alt="girl"/>
         <div className="add-item-container">
             <input
                 type="text"
@@ -100,17 +100,17 @@ function Home() {
                 className="add-icon"
                 onClick={()=>{
                     if(newTask === ""){
-                        toast.error('Task Can not be Empty')
+                        toast.error('Please Type a task To add....')
                         return
                     }
                     if(categeory === ""){
-                        toast.error('Category Can not be Empty')
+                        toast.error('Please Select a Category..')
                         return
                     }
                     setTodoList([...todoList,{task:newTask, categeory: categeory} ])
                     setNewTask("")
                     setCategory("")
-                    toast.success("Task Added Successfully")
+                    toast.success("Task Added Successfully....!")
                 }}
             />
         </div>

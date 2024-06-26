@@ -3,11 +3,18 @@
     margin: 10px 20px;
     border-radius: 5px;
     border: 1px solid gray;
-    font-size: 20px;  
+    font-size: 20px; 
+    font-weight: bold; 
     position: relative;
-    background-color: rgb(145, 240, 180);
+    background-color: blue;
     display: flex;
     align-items: center;
+}
+.todo-Card:hover{
+    cursor: pointer;
+    padding: 7px 25px;
+    box-shadow: (1,1,1,1)black;
+
 }
 .category{
     top: 5px;
@@ -41,7 +48,7 @@
         transform: rotate(0deg);
     }
     100%{
-        transform: rotate(25deg);
+        transform: rotate(-25deg);
     }
 }
 .delete-icon:hover{

@@ -3,7 +3,7 @@
     text-align: center;
     margin-bottom: -58px;
 }
-.panda-img1{
+.boy{
     height: 150px;
     margin-left: 520px;
     margin-bottom: -55px;
@@ -11,7 +11,7 @@
 .todolist-container{
     height: 500px;
     width: 500px;
-    background-color: white;
+    background-color: #fff;
     margin: 5px auto;
     border-radius: 10px;
     padding: 5px;
@@ -34,7 +34,7 @@
     margin-left: 20px;
     cursor: pointer;
 }
-.panda-img2{
+.girl{
     height: 170px;
     margin-left: 990px;
     margin-top: -1210px;
