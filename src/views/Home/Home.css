@@ -26,7 +26,7 @@
 .add-input{
     padding: 5px 10px;
     border-radius: 10px;
-    border:1px solid gray;
+    border:1.5px solid gray;
     font-size: 18px;
 }
 .add-icon{
@@ -56,11 +56,11 @@
     .todolist-container{
         margin: 0% 20%;
     }
-  .panda-img1{
+  .boy{
     margin-left:98px;
     margin-bottom: -52px;
 }
-  .panda-img2{
+  .girl{
     margin-left: 560px;
 }
 .add-item-container{
