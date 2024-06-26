@@ -1,0 +1,52 @@
+.todo-Card{
+    padding: 5px 20px ;
+    margin: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 20px;  
+    position: relative;
+    background-color: rgb(145, 240, 180);
+    display: flex;
+    align-items: center;
+}
+.category{
+    top: 5px;
+    right: 35px;
+    background-color: white;
+    font-size: 14px;
+    padding: 2px 2px;
+    width: 90px;
+    text-align: center;
+    border-radius: 10px;
+}
+.categoryy{
+    position: absolute;
+}
+.delete-icon{
+    height: 20px;
+    right: 10px;
+    cursor: pointer;
+}
+@keyframes delete-animation{
+    0%{
+        transform: rotate(-25deg);
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(25deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(25deg);
+    }
+}
+.delete-icon:hover{
+    height: 23px;
+    animation: delete-animation;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
